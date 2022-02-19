@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import ScrollAnimation from 'react-animate-on-scroll'; 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
