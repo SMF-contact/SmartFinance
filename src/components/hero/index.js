@@ -45,9 +45,9 @@ function Hero() {
                         </ScrollAnimation>
                     </div>
                 </div>
+                <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'> 
                 <div className="row">
                     <div className="col-lg-6 offset-lg-3 text-center">
-                        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'> 
                         <div className="copyAddress">
                             <p>Contract Address</p>
                             <CopyToClipboard text={AddressToCopy} onCopy={() => {
@@ -62,13 +62,11 @@ function Hero() {
                             </label>
                             </CopyToClipboard>
                             {Copied ? <span className="copied_success">copied success fully</span> : "" } 
-                        </div>
-                        </ScrollAnimation>
+                        </div> 
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-12">
-                    <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'> 
+                    <div className="col-lg-12"> 
                         <div className="brands">
                             <img src={Brand} alt="" />
                             <img src={Brand2} alt="" />
@@ -76,9 +74,9 @@ function Hero() {
                             <img src={Brand4} alt="" />
                             <img src={Brand5} alt="" />
                         </div>
-                    </ScrollAnimation>
                     </div>
                 </div>
+                </ScrollAnimation>
             </div>
         </div>
     );

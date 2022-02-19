@@ -9,10 +9,14 @@
     border: none;
     background: none;
     opacity: .5;
+    transition: .3s;
     display: block;
     padding: 40px 0;
 }
-
+.parners button:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
 .partnersColumn {
     width: 33.33%;
     position: relative;

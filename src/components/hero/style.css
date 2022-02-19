@@ -29,11 +29,12 @@
 }
 .copyAddress {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .copyAddress p {
     font-weight: 700;
     font-size: 22px;
+    line-height: 36px;
     color: #BDE0A2;
 }
 .copyAddress span.copied_success {
@@ -47,31 +48,36 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: white;
     border-radius: 20px;
     overflow: hidden;
+    background: #E9ECEF;
+    box-shadow: inset 0px 0px 6px 1px #000000;
 }
-
 .copyAddress label input {
     width: 100%;
-    height: 60px;
+    height: 48px;
+    font-size: 17px;
     border: none;
     padding: 10px 20px;
-    color: #0e0a41;
+    color: #7e7e7e;
     background: none;
     font-weight: 500;
     font-family: 'IBM Plex Mono', monospace;
+    cursor: pointer;
+    transition: .3s;
 }
-
-.copyAddress label  button {
+.copyAddress label input:hover{
+    color: #000;
+}
+.copyAddress label button {
     border: none;
     width: 230px;
-    height: 60px;
+    height: 48px;
     border-radius: 20px 0 0 20px;
     color: #212529;
     background: #FFC107;
+    box-shadow: inset -2px 0px 7px #000000;
 }
-
 .brands {
     display: flex;
     align-items: center;
@@ -84,6 +90,14 @@
     opacity: .5;
     transition: .3s;
     cursor: pointer;
+}
+.brands img:hover {
+    transform: scale(1.04);
+    opacity: 1;
+}
+.hero-wrp .countDownItIs {
+    margin: auto;
+    margin-top: 80px;
 }
 
 
