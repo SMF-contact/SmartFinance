@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useEffect, useState} from "react";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import ScrollAnimation from 'react-animate-on-scroll'; 
 
@@ -16,9 +16,11 @@ import Brand5 from "../../imgs/brands/b5.png"
 
 function Hero() {
 
-    const [AddressToCopy,setAddressToCopy] = useState("it will be copy...");
+    const [AddressToCopy,setAddressToCopy] = useState("");
     const [Copied,setCopied] = useState(false);
-
+    useEffect(() => {
+        setAddressToCopy("it will be copy...")
+    },[])
 
     return (
         <div className="hero-area" id="hero">
