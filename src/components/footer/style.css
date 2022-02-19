@@ -7,12 +7,14 @@
 
 .footer-social a {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 10px;
     filter: grayscale(1);
     opacity: .5;
     transition: .3s;
 }
-
+.footer-social a:hover{
+    transform: scale(1.1);
+}
 .footer-social a:hover {
     filter: unset;
     opacity: 1;
@@ -32,6 +34,7 @@
 
 .other_pages a {
     color: #7C7D8D;
+    margin-right: 20px;
 }
 
 .other_pages {

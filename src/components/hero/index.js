@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import "./style.css"
 import CountDown from "../helper/countDown";
-import HeroBackg from "../../imgs/hero-back.png"
+import HeroBackg from "../../imgs/hero-shapes.png"
 import HeroImg from "../../imgs/hero.png"
 import Brand from "../../imgs/brands/b.png"
 import Brand2 from "../../imgs/brands/b2.png"

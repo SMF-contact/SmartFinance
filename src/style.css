@@ -8,7 +8,7 @@ font-family: 'Mulish', sans-serif; */
 body {
   font-family: 'Mulish', sans-serif;
   font-weight: 400; 
-  background-color: #0E0A41;
+  background-color: #161243;
   color: #97DAF7;
   font-size: 18px; 
 }
@@ -32,8 +32,8 @@ a {
 
 }
 
-a:hover{
-  font-weight: 700;
+a:hover{ 
+  transition: .3s;
 }
 a,
 button {

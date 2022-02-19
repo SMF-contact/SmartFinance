@@ -3,7 +3,9 @@
     z-index: 2;
     padding: 50px 0;
 }
-
+.feature-area .content-block {
+    min-height: 445px;
+}
 .feature-area img.features-backg {
     position: absolute;
     top: 0;
