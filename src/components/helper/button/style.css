@@ -36,7 +36,7 @@ button.theme-btn:after {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #0E0A41;
+    background: #161243;
     z-index: -2;
     border-radius: 5px;
 }

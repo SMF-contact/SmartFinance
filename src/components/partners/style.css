@@ -57,7 +57,9 @@
 
 .pertner-area img.PertnerShape {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 50px; 
+    -webkit-user-drag: none;
+    -webkit-user-drag: none;
 }
 
 
