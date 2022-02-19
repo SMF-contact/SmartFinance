@@ -1,0 +1,24 @@
+.fixed-social {
+    position: fixed;
+    top: 50%;
+    width: max-content;
+    right: 2%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background: rgba(35, 58, 171, 0.33);
+    padding: 30px 15px;
+    border-radius: 10px;
+}
+
+.fixed-social a {
+    display: block;
+    margin: 10px 0;
+    filter: grayscale(1);
+    transition: .3s;
+    opacity: .5;
+}
+
+.fixed-social a:hover {
+    opacity: 1;
+    filter: unset;
+}

@@ -1,0 +1,55 @@
+.header-area {
+    background: rgba(29, 24, 87, 0.5);
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 0 60px;
+}
+
+.menu-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-area ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu-area ul li a {
+    display: block;
+    margin-right: 20px;
+    transition: .3s;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.menu-area ul li a:hover {
+    color: #fff;
+}
+.btns {
+    margin-left: 50px;
+}
+.hero-wrp .countDownItIs {
+    margin: auto;
+    margin-top: 100px;
+}
+.hero-img {
+    text-align: right;
+    display: block;
+}
+
+
+
+
+
+
+
+

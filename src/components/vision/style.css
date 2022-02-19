@@ -1,0 +1,22 @@
+.vision-area {
+    position: relative;
+    z-index: 1;
+    padding-top: 140px;
+    padding-bottom: 100px;
+    background: linear-gradient(rgb(15 11 67), rgba(13, 9, 59, 1));
+}
+.vision-area img.visionShape {
+    position: absolute;
+    top: 25px;
+    left: -140px;
+}
+
+.section-title {
+    margin-bottom: 100px;
+}
+
+.section-title h3 {
+    font-size: 48px;
+    margin: 0;
+    text-transform: uppercase;
+}
