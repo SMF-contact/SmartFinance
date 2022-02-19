@@ -92,7 +92,9 @@
 }
 
 .airdrop:hover:after {
-    opacity: 0;
+    background: #1c175a;
+    width: 99.6%;
+    height: 99%;
 }
 
 .airdrop p {

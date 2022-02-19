@@ -37,9 +37,26 @@
   line-height: 28px;
 }
 
-.countDownItIs .countdown-wrapper .time-section 
-small.time-text {
+.countDownItIs .countdown-wrapper .time-section small.time-text {
   display: block;
   text-transform: uppercase;
   font-size: 10px;
 }
+.countDownItIs button.theme-btn:after {
+  background: #221c67;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -14,8 +14,7 @@ import ScrollTop from "./components/helper/scroolToTop";
 
 function App() {
   return (
-    <>
-    
+    <> 
       <FixedSocial/>
       <ScrollTop />
 

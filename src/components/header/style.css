@@ -41,7 +41,9 @@
     text-align: right;
     display: block;
 }
-
+.btns button.theme-btn:after {
+    background: #1d1857;
+}
 
 
 
