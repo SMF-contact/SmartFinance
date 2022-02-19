@@ -60,6 +60,7 @@
     color: #0e0a41;
     background: none;
     font-weight: 500;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .copyAddress label  button {
@@ -84,3 +85,16 @@
     transition: .3s;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

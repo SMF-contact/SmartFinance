@@ -19,7 +19,7 @@ function Hero() {
     const [AddressToCopy,setAddressToCopy] = useState("");
     const [Copied,setCopied] = useState(false);
     useEffect(() => {
-        setAddressToCopy("it will be copy...")
+        setAddressToCopy("0xAE973B22d9764476041043C7d6eFdF20a5E6093F")
     },[])
 
     return (

@@ -32,6 +32,7 @@ function RoadMap() {
                         <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
                             <div className="roadmap_slider">
                                 <Swiper
+                                    slidesPerView={2}
                                     direction={"vertical"}
                                     navigation={true}
                                     pagination={{
@@ -55,18 +56,7 @@ function RoadMap() {
                                                     <li>Presale Launch</li>
                                                     <li>Pancakeswap Listing</li> 
                                                 </ul>
-                                            </div>
-                                            <div className="roadmapWrp-blk mt-5"> 
-                                                <h2>2021-Q1</h2>
-                                                <ul> 
-                                                    <li>Smart Contract Audit.</li>
-                                                    <li className="roundShape">Platform Launch.</li>
-                                                    <li className="roundShape">Coinmarketcap Listing.</li>
-                                                    <li className="roundShape">Coingecko Listing.</li>
-                                                    <li className="roundShape">Unveiling marketing plan.</li>
-                                                    <li className="roundShape">Marketplace Beta test</li> 
-                                                </ul>
-                                            </div>
+                                            </div> 
                                         </div>
                                     </SwiperSlide>  
                                     <SwiperSlide>
@@ -84,18 +74,7 @@ function RoadMap() {
                                                     <li>Presale Launch</li>
                                                     <li>Pancakeswap Listing</li> 
                                                 </ul>
-                                            </div>
-                                            <div className="roadmapWrp-blk mt-5"> 
-                                                <h2>2021-Q1</h2>
-                                                <ul> 
-                                                    <li>Smart Contract Audit.</li>
-                                                    <li className="roundShape">Platform Launch.</li>
-                                                    <li className="roundShape">Coinmarketcap Listing.</li>
-                                                    <li className="roundShape">Coingecko Listing.</li>
-                                                    <li className="roundShape">Unveiling marketing plan.</li>
-                                                    <li className="roundShape">Marketplace Beta test</li> 
-                                                </ul>
-                                            </div>
+                                            </div> 
                                         </div>
                                     </SwiperSlide>  
                                     <SwiperSlide>
@@ -113,18 +92,7 @@ function RoadMap() {
                                                     <li>Presale Launch</li>
                                                     <li>Pancakeswap Listing</li> 
                                                 </ul>
-                                            </div>
-                                            <div className="roadmapWrp-blk mt-5"> 
-                                                <h2>2021-Q1</h2>
-                                                <ul> 
-                                                    <li>Smart Contract Audit.</li>
-                                                    <li className="roundShape">Platform Launch.</li>
-                                                    <li className="roundShape">Coinmarketcap Listing.</li>
-                                                    <li className="roundShape">Coingecko Listing.</li>
-                                                    <li className="roundShape">Unveiling marketing plan.</li>
-                                                    <li className="roundShape">Marketplace Beta test</li> 
-                                                </ul>
-                                            </div>
+                                            </div> 
                                         </div>
                                     </SwiperSlide>  
                                     <SwiperSlide>
@@ -142,18 +110,7 @@ function RoadMap() {
                                                     <li>Presale Launch</li>
                                                     <li>Pancakeswap Listing</li> 
                                                 </ul>
-                                            </div>
-                                            <div className="roadmapWrp-blk mt-5"> 
-                                                <h2>2021-Q1</h2>
-                                                <ul> 
-                                                    <li>Smart Contract Audit.</li>
-                                                    <li className="roundShape">Platform Launch.</li>
-                                                    <li className="roundShape">Coinmarketcap Listing.</li>
-                                                    <li className="roundShape">Coingecko Listing.</li>
-                                                    <li className="roundShape">Unveiling marketing plan.</li>
-                                                    <li className="roundShape">Marketplace Beta test</li> 
-                                                </ul>
-                                            </div>
+                                            </div> 
                                         </div>
                                     </SwiperSlide>  
                                     <SwiperSlide>
@@ -171,18 +128,7 @@ function RoadMap() {
                                                     <li>Presale Launch</li>
                                                     <li>Pancakeswap Listing</li> 
                                                 </ul>
-                                            </div>
-                                            <div className="roadmapWrp-blk mt-5"> 
-                                                <h2>2021-Q1</h2>
-                                                <ul> 
-                                                    <li>Smart Contract Audit.</li>
-                                                    <li className="roundShape">Platform Launch.</li>
-                                                    <li className="roundShape">Coinmarketcap Listing.</li>
-                                                    <li className="roundShape">Coingecko Listing.</li>
-                                                    <li className="roundShape">Unveiling marketing plan.</li>
-                                                    <li className="roundShape">Marketplace Beta test</li> 
-                                                </ul>
-                                            </div>
+                                            </div> 
                                         </div>
                                     </SwiperSlide>  
                                 </Swiper>
