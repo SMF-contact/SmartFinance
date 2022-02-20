@@ -136,8 +136,8 @@
 .swiper-button-next::after {
   transform: rotate(-136deg) translate(20%,22%);
 }
-.roadmapWrp {
-  cursor: n-resize;
+.roadmap_slider { 
+  cursor: url("../../imgs/arrow_32.png"),auto;
 }
 
 

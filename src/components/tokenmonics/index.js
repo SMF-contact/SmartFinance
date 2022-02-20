@@ -5,10 +5,10 @@ import TheBarChart from "../helper/bar-chart";
 import PieChat from "../helper/pie-chart"; 
 import Button from "../helper/button"
 import ScrollAnimation from 'react-animate-on-scroll'; 
-import { PieChart } from 'react-minimal-pie-chart';
-import {CanvasJSChart} from 'canvasjs-react-charts'
-import { BarChart, Bar, XAxis, YAxis,CartesianGrid } from 'recharts';
-import Crt from "./chart"
+import { PieChart } from 'react-minimal-pie-chart'; 
+ 
+
+
 
 
 function Tokenomics() {
@@ -22,80 +22,56 @@ function Tokenomics() {
     { title: 'Gaming Tournament', value: 5, color: '#32e4ed' }, 
     { title: 'Airdrop', value: 3, color: '#32bbed' }, 
   ];
-  
-  // window.addEventListener('load', () => {
-  //   var canvas = document.querySelectorAll(".canvasjs-chart-canvas"); 
-  //   canvas.forEach(itm =>{ 
-  //     var ctx = itm.getContext("2d");
-  //     ctx.fillStyle = "#FF0000";
-  //     ctx.fillRect(20, 20, 150, 100);
-  //     console.log(canvas)
-  //   })
-  // })
+   
+  // For bar chart
+  const colors = {
+    "presale": "#3260ED",
+    "liquidity": "#3290ed",
+    "airdrop": "#32bbed",
+    "gaming": "#32e4ed",
+    "staking": "#8CA8FF",
+    "dev": "#7c7af0",
+    "listing": "#7af0d1"
+  };  
+  const data = {
+    labels:["Dec 21", "Feb 22", "Apr 22", "May 22", "June 22", "Aug 22"],
+    datasets: [{
+      label: 'Presale',
+      data: [24000000, 24000000, 24000000, 24000000, 24000000, 24000000],
+      backgroundColor: colors.presale // hoverBackgroundColor: "#3260ED",
 
-	// Sample data
-	const data = [
-		{ name: 'A', x: 12, y: 23, z: 122 },
-		{ name: 'B', x: 22, y: 3, z: 73 },
-		{ name: 'C', x: 13, y: 15, z: 32 },
-		{ name: 'D', x: 44, y: 35, z: 23 },
-		{ name: 'E', x: 35, y: 45, z: 20 },
-		{ name: 'F', x: 62, y: 25, z: 29 },
-		{ name: 'G', x: 37, y: 17, z: 61 },
-		{ name: 'H', x: 28, y: 32, z: 45 },
-		{ name: 'I', x: 19, y: 43, z: 93 },
-	];
+    }, {
+      label: 'Liquidity',
+      data: [12936000, 12936000, 12936000, 12936000, 12936000, 12936000],
+      backgroundColor: colors.liquidity // hoverBackgroundColor: "#d65ad6",
 
-  const options = {
-    backgroundColor: "#0000",
-    animationEnabled: true,
-    exportEnabled: false,
-    theme: "dark1", //"light1", "dark1", "dark2"
-    title:{
-      text: " "
-    },
-    axisX: {
-      gridColor: "transparent",
-      lineColor: "transparent",
-      includeZero: true
-    },
-    axisY: {
-      gridColor: "transparent",
-      lineColor: "transparent",
-      includeZero: true
-    },
-    data: [{ 
-      type: "column", //change type to bar, line, area, pie, etc  
-      //indexLabel: "{y}", //Shows y value on all Data Points
-      indexLabelFontColor: "#fff",
-      indexLabelPlacement: "outside",
-      dataPoints: [  
-        { label: "Dec-21", y: 71 },
-        { label: "Feb-22", y: 55 },
-        { label: "Apr-22", y: 50 },
-        { label: "May-22", y: 65 },
-        { label: "Jun-22", y: 71 },
-        { label: "Aug-22", y: 68 }, 
-        // { x: 80, y: 92, indexLabel: "Highest" },
-      ]
-    },
-    { 
-      type: "column", //change type to bar, line, area, pie, etc  
-      //indexLabel: "{y}", //Shows y value on all Data Points
-      indexLabelFontColor: "#fff",
-      indexLabelPlacement: "outside",
-      dataPoints: [  
-        { label: "Dec-21", y: 71 },
-        { label: "Feb-22", y: 55 },
-        { label: "Apr-22", y: 50 },
-        { label: "May-22", y: 65 },
-        { label: "Jun-22", y: 71 },
-        { label: "Aug-22", y: 68 }, 
-        // { x: 80, y: 92, indexLabel: "Highest" },
-      ]
-    }
-  ]
-  }
+    }, {
+      label: 'Airdrop',
+      data: [0, 2310000, 2310000, 2310000, 2310000, 2310000],
+      backgroundColor: colors.airdrop // hoverBackgroundColor: "6afff1"
+
+    }, {
+      label: 'Gaming',
+      data: [0, 0, 3850000, 3850000, 3850000, 3850000],
+      backgroundColor: colors.gaming // hoverBackgroundColor: "rgba(0,0,0,0)"
+
+    }, {
+      label: 'Staking',
+      data: [0, 0, 0, 15400000, 15400000, 15400000],
+      backgroundColor: colors.staking // hoverBackgroundColor: "rgba(0,0,0,0)"
+
+    }, {
+      label: 'Dev',
+      data: [0, 0, 0, 0, 3850000, 3850000],
+      backgroundColor: colors.dev // hoverBackgroundColor: "rgba(0,0,0,0)"
+
+    }, {
+      label: 'Listing',
+      data: [0, 0, 0, 0, 0, 14174000],
+      backgroundColor: colors.listing // hoverBackgroundColor: "rgba(0,0,0,0)"
+
+    }],
+  };
 
     return (
         <div className="tokenomics-area" id="tokenomics">
@@ -158,110 +134,8 @@ function Tokenomics() {
                     <div className="col-lg-12">
                         <div className="the-bar-chart">
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
-                            <h5>token release</h5>
-                            {/* <Crt></Crt> */}
-                            <BarChart width={500} height={500} data={data} >
-                              <CartesianGrid />
-                              <XAxis dataKey="name" />
-                              <YAxis />
-                              <Bar dataKey="x" stackId="a" fill="#8884d8" />
-                              <Bar dataKey="y" stackId="a" fill="#82ca9d" />
-                            </BarChart>
-			                      {/* <CanvasJSChart options = {options} />
-                            <TheBarChart data={
-                                [
-                                    {
-                                      "year": "Dec-21",
-                                      "value": 3,
-                                      "type": "Presale"
-                                    },
-                                    {
-                                      "year": "Feb-22",
-                                      "value": 114,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "Apr-22",
-                                      "value": 3.5,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "May-22",
-                                      "value": 5,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "Jun-22",
-                                      "value": 4.9,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "Aug-22",
-                                      "value": 6,
-                                      "type": "Lon"
-                                    }, 
-                                    {
-                                      "year": "Dec-21",
-                                      "value": 3,
-                                      "type": "Presale"
-                                    },
-                                    {
-                                      "year": "Feb-22",
-                                      "value": 114,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "Apr-22",
-                                      "value": 3.5,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "May-22",
-                                      "value": 5,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "Jun-22",
-                                      "value": 4.9,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "Aug-22",
-                                      "value": 6,
-                                      "type": "Lon"
-                                    }, 
-                                    {
-                                      "year": "Dec-21",
-                                      "value": 3,
-                                      "type": "Presale"
-                                    },
-                                    {
-                                      "year": "Feb-22",
-                                      "value": 114,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "Apr-22",
-                                      "value": 3.5,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "May-22",
-                                      "value": 5,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "Jun-22",
-                                      "value": 4.9,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "Aug-22",
-                                      "value": 6,
-                                      "type": "Lon"
-                                    }, 
-                                ]
-                            }/> */}
+                              <h5>token release</h5> 
+                              <TheBarChart datasets= {data}  /> 
                             </ScrollAnimation>  
                         </div>
                     </div>

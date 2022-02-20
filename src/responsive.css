@@ -419,6 +419,39 @@
  
 }
  
+/* mobile menu */
+@media only screen and (max-width: 991px) {
+    .menu-area {
+        position: fixed;
+        background: #201b52;
+        width: 300px;
+        right: 0;
+        top: 0;
+        display: block;
+        height: 100vh;
+        min-height: 400px;
+        overflow: auto;
+        box-shadow: 23px 0 30px 10px #ffffff3d;
+        margin-right: -300px;
+        transition: .3s;
+    }
+    
+    .menu-area ul {
+        display: block;
+        padding: 25px;
+        padding-top: 70px;
+    }
+    
+    .menu-area ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ffffff12;
+    }
+    
+    .menu-area.active {
+        margin: 0;
+    }
+}
+ 
 /* Large Mobile screen :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
