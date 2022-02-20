@@ -432,6 +432,9 @@
     .mobileMenuI{
         display: block;
     }
+    .btns button.theme-btn:after {
+        background: #201b52;
+    }
     .menu-area {
         position: fixed;
         background: #201b52;
