@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css" 
 import TokenBackg from "../../imgs/tokenomics.png" 
 import TheBarChart from "../helper/bar-chart";
-import PieChat from "../helper/pie-chart";
+import PieChat from "../helper/pie-chart"; 
 import Button from "../helper/button"
 import ScrollAnimation from 'react-animate-on-scroll'; 
 
@@ -20,14 +20,39 @@ function Tokenomics() {
                         </div>
                     </div>
                     <div className="col-lg-7">
-                        <div className="pi-data tknTop"> 
+                        <div className="pi-data tknTop">  
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
+                                <h5>Token Distribution</h5>
                                 <PieChat 
-                                    datas={[
-                                        { name: "Active Campagins", value: 90 },
-                                        { name: "Inactive Campagins", value: 25 },
-                                        { name: "Campagins", value: 25 },
-                                        { name: "ICPs with no campagins", value: 10 }
+                                    data={[
+                                        {
+                                          type: 'Token Presale 31.48%',
+                                          value: 27,
+                                        },
+                                        {
+                                          type: 'Staking & Farming 20%',
+                                          value: 25,
+                                        },
+                                        {
+                                          type: 'Listing 18.41%',
+                                          value: 18,
+                                        },
+                                        {
+                                          type: 'Liquidity 17.11%',
+                                          value: 15,
+                                        },
+                                        {
+                                          type: 'Dev Wallet 5%',
+                                          value: 10,
+                                        },
+                                        {
+                                          type: 'Gaming Tournament 5%',
+                                          value: 5,
+                                        },
+                                        {
+                                          type: 'Airdrop 1%',
+                                          value: 5,
+                                        },
                                     ]}
                                     labelText={"Total supply"}
                                     ValueNumber={77000000}
@@ -57,50 +82,100 @@ function Tokenomics() {
                         <div className="the-bar-chart">
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
                             <h5>token release</h5>
-                            <TheBarChart datas={[
-                                {
-                                    name: "Page A",
-                                    uv: 4000,
-                                    pv: 2400,
-                                    amt: 2400
-                                },
-                                {
-                                    name: "Page B",
-                                    uv: 3000,
-                                    pv: 1398,
-                                    amt: 2210
-                                },
-                                {
-                                    name: "Page C",
-                                    uv: 2000,
-                                    pv: 9800,
-                                    amt: 2290
-                                },
-                                {
-                                    name: "Page D",
-                                    uv: 2780,
-                                    pv: 3908,
-                                    amt: 2000
-                                },
-                                {
-                                    name: "Page E",
-                                    uv: 1890,
-                                    pv: 4800,
-                                    amt: 2181
-                                },
-                                {
-                                    name: "Page F",
-                                    uv: 2390,
-                                    pv: 3800,
-                                    amt: 2500
-                                },
-                                {
-                                    name: "Page G",
-                                    uv: 3490,
-                                    pv: 4300,
-                                    amt: 2100
-                                }
-                            ]}/>
+                            <TheBarChart data={
+                                [
+                                    {
+                                      "year": "Dec-21",
+                                      "value": 3,
+                                      "type": "Presale"
+                                    },
+                                    {
+                                      "year": "1992",
+                                      "value": 114,
+                                      "type": "Lon"
+                                    },
+                                    {
+                                      "year": "1993",
+                                      "value": 3.5,
+                                      "type": "Lon"
+                                    },
+                                    {
+                                      "year": "1994",
+                                      "value": 5,
+                                      "type": "Lon"
+                                    },
+                                    {
+                                      "year": "1995",
+                                      "value": 4.9,
+                                      "type": "Lon"
+                                    },
+                                    {
+                                      "year": "1996",
+                                      "value": 6,
+                                      "type": "Lon"
+                                    },
+                                    {
+                                      "year": "1997",
+                                      "value": 7,
+                                      "type": "Lon"
+                                    },
+                                    {
+                                      "year": "1998",
+                                      "value": 9,
+                                      "type": "Lon"
+                                    },
+                                    {
+                                      "year": "1999",
+                                      "value": 13,
+                                      "type": "Lon"
+                                    },
+                                    {
+                                      "year": "1991",
+                                      "value": 3,
+                                      "type": "Bor"
+                                    },
+                                    {
+                                      "year": "1992",
+                                      "value": 4,
+                                      "type": "Bor"
+                                    },
+                                    {
+                                      "year": "1993",
+                                      "value": 3.5,
+                                      "type": "Bor"
+                                    },
+                                    {
+                                      "year": "1994",
+                                      "value": 5,
+                                      "type": "Bor"
+                                    },
+                                    {
+                                      "year": "1995",
+                                      "value": 4.9,
+                                      "type": "Bor"
+                                    },
+                                    {
+                                      "year": "1996",
+                                      "value": 6,
+                                      "type": "Bor"
+                                    },
+                                    {
+                                      "year": "1997",
+                                      "value": 7,
+                                      "type": "Bor"
+                                    },
+                                    {
+                                      "year": "1998",
+                                      "value": 9,
+                                      "type": "Bor"
+                                    },
+                                    {
+                                      "year": "1999",
+                                      "value": 13,
+                                      "type": "Bor"
+                                    }
+                                ]
+                            }/>
                             </ScrollAnimation>  
                         </div>
                     </div>

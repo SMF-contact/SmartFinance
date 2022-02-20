@@ -2,13 +2,12 @@
     position: relative;
     z-index: 2;
 }
-
 .tokenomics-area img.tokenomics-backg {
     position: absolute;
-    bottom: 0;
+    top: 180px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
     z-index: -1;
 }
 .stickChart {
@@ -55,7 +54,9 @@
     color: #6C757D;
     margin-left: 30px;
 }
-
+.pi-data h5{
+    text-align: center;
+}
 .tknTop ul {
     display: block;
 }
@@ -83,6 +84,7 @@
     text-align: center;
     font-size: 24px;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .the-bar-chart .recharts-wrapper {
