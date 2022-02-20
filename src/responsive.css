@@ -159,7 +159,11 @@
         width: 170px;
 
     }
-
+    .vision-area img.visionShape {
+        top: 0px;
+        max-height: 150px;
+        left: -100px;
+    }
 }
 
  
@@ -416,7 +420,11 @@
         right: 70px;
         bottom: 30px;
     }
- 
+    .vision-area img.visionShape {
+        top: 0px;
+        max-height: 150px;
+        left: -100px;
+    }
 }
  
 /* mobile menu */

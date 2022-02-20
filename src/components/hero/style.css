@@ -2,6 +2,7 @@
     padding-top: 200px;
     padding-bottom: 50px;
     position: relative;
+    background-color: #0f0b43;
     z-index: 2;
 }
 .hero-area img.hero_img {
