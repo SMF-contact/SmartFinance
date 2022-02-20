@@ -14,13 +14,14 @@
     padding: 40px 0;
 }
 .parners button:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     opacity: 1;
 }
 .partnersColumn {
     width: 33.33%;
     position: relative;
 }
+.partnersColumn:nth-child(2) .willMove,
 .partnersColumn:nth-child(2) button {
     margin: auto;
 }
@@ -41,8 +42,10 @@
     left: 0;
 }
 
+.partnersColumn:last-child .willMove,
 .partnersColumn:last-child button {
-    margin: auto;
+    margin-left: auto;
+    margin-right: 0;
 }
 .parners:after {
     content: "";

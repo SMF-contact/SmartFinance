@@ -19,7 +19,7 @@ function Tokenomics() {
                             </ScrollAnimation>   
                         </div>
                     </div>
-                    <div className="col-lg-7">
+                    <div className="col-lg-5">
                         <div className="pi-data tknTop">  
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
                                 <h5>Token Distribution</h5>
@@ -27,23 +27,23 @@ function Tokenomics() {
                                     data={[
                                         {
                                           type: 'Token Presale 31.48%',
-                                          value: 27,
+                                          value: 31.48,
                                         },
                                         {
                                           type: 'Staking & Farming 20%',
-                                          value: 25,
+                                          value: 20,
                                         },
                                         {
                                           type: 'Listing 18.41%',
-                                          value: 18,
+                                          value: 18.41,
                                         },
                                         {
                                           type: 'Liquidity 17.11%',
-                                          value: 15,
+                                          value: 17.11,
                                         },
                                         {
                                           type: 'Dev Wallet 5%',
-                                          value: 10,
+                                          value: 5,
                                         },
                                         {
                                           type: 'Gaming Tournament 5%',
@@ -51,7 +51,7 @@ function Tokenomics() {
                                         },
                                         {
                                           type: 'Airdrop 1%',
-                                          value: 5,
+                                          value: 1,
                                         },
                                     ]}
                                     labelText={"Total supply"}
@@ -60,7 +60,7 @@ function Tokenomics() {
                             </ScrollAnimation>  
                         </div>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 offset-lg-1">
                         <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
                         <div className="transactionTax tknTop">
                             <h5>transaction Tax <span>11%</span></h5>
@@ -90,90 +90,30 @@ function Tokenomics() {
                                       "type": "Presale"
                                     },
                                     {
-                                      "year": "1992",
+                                      "year": "Feb-22",
                                       "value": 114,
                                       "type": "Lon"
                                     },
                                     {
-                                      "year": "1993",
+                                      "year": "Apr-22",
                                       "value": 3.5,
                                       "type": "Lon"
                                     },
                                     {
-                                      "year": "1994",
+                                      "year": "May-22",
                                       "value": 5,
                                       "type": "Lon"
                                     },
                                     {
-                                      "year": "1995",
+                                      "year": "Jun-22",
                                       "value": 4.9,
                                       "type": "Lon"
                                     },
                                     {
-                                      "year": "1996",
+                                      "year": "Aug-22",
                                       "value": 6,
                                       "type": "Lon"
-                                    },
-                                    {
-                                      "year": "1997",
-                                      "value": 7,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "1998",
-                                      "value": 9,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "1999",
-                                      "value": 13,
-                                      "type": "Lon"
-                                    },
-                                    {
-                                      "year": "1991",
-                                      "value": 3,
-                                      "type": "Bor"
-                                    },
-                                    {
-                                      "year": "1992",
-                                      "value": 4,
-                                      "type": "Bor"
-                                    },
-                                    {
-                                      "year": "1993",
-                                      "value": 3.5,
-                                      "type": "Bor"
-                                    },
-                                    {
-                                      "year": "1994",
-                                      "value": 5,
-                                      "type": "Bor"
-                                    },
-                                    {
-                                      "year": "1995",
-                                      "value": 4.9,
-                                      "type": "Bor"
-                                    },
-                                    {
-                                      "year": "1996",
-                                      "value": 6,
-                                      "type": "Bor"
-                                    },
-                                    {
-                                      "year": "1997",
-                                      "value": 7,
-                                      "type": "Bor"
-                                    },
-                                    {
-                                      "year": "1998",
-                                      "value": 9,
-                                      "type": "Bor"
-                                    },
-                                    {
-                                      "year": "1999",
-                                      "value": 13,
-                                      "type": "Bor"
-                                    }
+                                    }, 
                                 ]
                             }/>
                             </ScrollAnimation>  

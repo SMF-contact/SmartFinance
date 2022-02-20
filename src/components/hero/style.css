@@ -92,7 +92,7 @@
     cursor: pointer;
 }
 .brands img:hover {
-    transform: scale(1.04);
+    /* transform: scale(1.04); */
     opacity: 1;
 }
 .hero-wrp .countDownItIs {

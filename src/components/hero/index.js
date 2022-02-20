@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from "react";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import ScrollAnimation from 'react-animate-on-scroll'; 
+import Tilt from 'react-tilt'
 
 import "./style.css"
 import CountDown from "../helper/countDown";
@@ -19,7 +20,7 @@ function Hero() {
     const [AddressToCopy,setAddressToCopy] = useState("");
     const [Copied,setCopied] = useState(false);
     useEffect(() => {
-        setAddressToCopy("0xAE973B22d9764476041043C7d6eFdF20a5E6093F")
+        setAddressToCopy("0xAE973B22d9764476041043C7d6eFdF20a5E6093F")  
     },[])
 
     return (
@@ -67,12 +68,22 @@ function Hero() {
                 </div>
                 <div className="row">
                     <div className="col-lg-12"> 
-                        <div className="brands">
-                            <img src={Brand} alt="" />
-                            <img src={Brand2} alt="" />
-                            <img src={Brand3} alt="" />
-                            <img src={Brand4} alt="" />
-                            <img src={Brand5} alt="" />
+                        <div className="brands"> 
+                            <Tilt className="willMove" options={{ max : 35,perspective:1000, }}>
+                                <img src={Brand} alt="" />
+                            </Tilt>
+                            <Tilt className="willMove" options={{ max : 35,perspective:1000, }}>
+                                <img src={Brand2} alt="" />
+                            </Tilt>
+                            <Tilt className="willMove" options={{ max : 35,perspective:1000, }}>
+                                <img src={Brand3} alt="" />
+                            </Tilt>
+                            <Tilt className="willMove" options={{ max : 35,perspective:1000, }}>
+                                <img src={Brand4} alt="" />
+                            </Tilt>
+                            <Tilt className="willMove" options={{ max : 35,perspective:1000, }}>
+                                <img src={Brand5} alt="" />
+                            </Tilt> 
                         </div>
                     </div>
                 </div>

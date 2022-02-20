@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css" 
+import Tilt from 'react-tilt'
+
 import ScrollAnimation from 'react-animate-on-scroll'; 
 import PartnersBackg from "../../imgs/wave.png" 
 import PartnerLogo from "../../imgs/partners/p.png"
@@ -35,26 +37,38 @@ function Pertners() {
                     <div className="parners"> 
                         <div className="partnersColumn">
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
-                                <PertnerBlk img={PartnerLogo} /> 
+                                <Tilt className="willMove" options={{ max : 35,perspective:1000, }} >
+                                    <PertnerBlk img={PartnerLogo} />
+                                </Tilt> 
                             </ScrollAnimation>   
-                            <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
-                                <PertnerBlk img={PartnerLogo3} /> 
-                            </ScrollAnimation>   
-                        </div>
-                        <div className="partnersColumn">
-                            <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
-                                <PertnerBlk img={PartnerLogo2} /> 
-                            </ScrollAnimation>   
-                            <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
-                                <PertnerBlk img={PartnerLogo6} /> 
+                            <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>  
+                                <Tilt className="willMove" options={{ max : 35,perspective:1000, }} >
+                                    <PertnerBlk img={PartnerLogo3} />
+                                </Tilt>   
                             </ScrollAnimation>   
                         </div>
                         <div className="partnersColumn">
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
-                                <PertnerBlk img={PartnerLogo4} /> 
+                                <Tilt className="willMove" options={{ max : 35,perspective:1000, }} >
+                                    <PertnerBlk img={PartnerLogo2} />
+                                </Tilt> 
+                            </ScrollAnimation>   
+                            <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
+                                <Tilt className="willMove" options={{ max : 35,perspective:1000, }} >
+                                    <PertnerBlk img={PartnerLogo6} />
+                                </Tilt> 
+                            </ScrollAnimation>   
+                        </div>
+                        <div className="partnersColumn">
+                            <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
+                                <Tilt className="willMove" options={{ max : 35,perspective:1000, }} >
+                                    <PertnerBlk img={PartnerLogo4} />
+                                </Tilt> 
                             </ScrollAnimation>   
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
-                                <PertnerBlk img={PartnerLogo5} /> 
+                                <Tilt className="willMove" options={{ max : 35,perspective:1000, }} >
+                                    <PertnerBlk img={PartnerLogo5} />
+                                </Tilt> 
                             </ScrollAnimation>   
                         </div> 
                     </div>

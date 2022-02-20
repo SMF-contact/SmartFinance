@@ -4,12 +4,12 @@ import "./style.css";
 
 function PieChat({data,labelText,ValueNumber}) { 
   const config = {
-    appendPadding: 10,
+    appendPadding: 50,
     data, 
     angleField: 'value',
     colorField: 'type',
     radius: 1,
-    innerRadius: 0.6,
+    innerRadius: 0.6, 
     label: {
       type: 'inner',
       offset: '-50%',
