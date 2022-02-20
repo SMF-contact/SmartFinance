@@ -45,28 +45,32 @@ const CountDown = ({date}) => {
   };
 
   return (
-    <div className="countDownItIs"> 
-      <h4 className="title">PRESALE START IN</h4>
-      <div className='countdown-wrapper'>
-        <div className='time-section'>
-          <div className='time'>{state.days || '0'}</div>
-          <small className="time-text">Days</small>
-        </div> 
-        <div className='time-section'>
-          <div className='time'>{state.hours || '00'}</div>
-          <small className="time-text">Hours</small>
-        </div> 
-        <div className='time-section'>
-          <div className='time'>{state.minutes || '00'}</div>
-          <small className="time-text">Minutes</small>
-        </div> 
-        <div className='time-section'>
-          <div className='time'>{state.seconds || '00'}</div>
-          <small className="time-text">Seconds</small>
+    <> 
+    { 0 < state.days && state.hours && state.minutes && state.seconds ?  
+      <div className="countDownItIs">
+        <h4 className="title">PRESALE START IN</h4>
+        <div className='countdown-wrapper'>
+          <div className='time-section'>
+            <div className='time'>{state.days || '0'}</div>
+            <small className="time-text">Days</small>
+          </div> 
+          <div className='time-section'>
+            <div className='time'>{state.hours || '00'}</div>
+            <small className="time-text">Hours</small>
+          </div> 
+          <div className='time-section'>
+            <div className='time'>{state.minutes || '00'}</div>
+            <small className="time-text">Minutes</small>
+          </div> 
+          <div className='time-section'>
+            <div className='time'>{state.seconds || '00'}</div>
+            <small className="time-text">Seconds</small>
+          </div>
         </div>
+        <Button classes={"theme-btn"} text="Buy Presale" />
       </div>
-      <Button classes={"theme-btn"} text="Buy Presale" />
-    </div>
+    : ""} 
+    </>
   );
 };
 

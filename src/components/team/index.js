@@ -14,7 +14,7 @@ import TeamAvater8 from "../../imgs/team/avatar8.png"
 
 const TeamBlk = ({img,name,position,content}) => {
     return(
-        <div className="col-lg-3"> 
+        <div className="col-lg-3 col-md-6"> 
             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
                 <div className="teamBlk">
                     <img src={img} alt="" />

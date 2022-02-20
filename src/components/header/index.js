@@ -9,12 +9,12 @@ function Header() {
         <div className="header-area">
             <div className="container-fluid">
                 <div className="row align-items-center">
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 col-md-6 col-6">
                         <div className="logo">
                             <a href="#"><img src={Logo} alt="" /></a>
                         </div>
                     </div>
-                    <div className="col-lg-9">
+                    <div className="col-lg-9 col-md-6 col-6">
                         <div className="menu-area">
                             <ul>
                                 <li><a href="#vision">Vision</a></li>

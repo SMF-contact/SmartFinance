@@ -1,8 +1,8 @@
 import React from 'react'; 
 import { Column } from '@ant-design/plots'; 
 import { each, groupBy } from '@antv/util';
- 
-
+import { Chart } from '@antv/g2'; 
+  
 function TheBarChart({data}) { 
   
   // 也可以在项目中直接使用 lodash
@@ -26,10 +26,19 @@ function TheBarChart({data}) {
     isStack: true,
     xField: 'year',
     yField: 'value',
-    seriesField: 'type',
+    seriesField: 'type', 
+    colors:['#001122', '#003322', '#004422', '#005522', '#006622', '#007722', '#008822' ],
+    height:648, 
     label: {
       // 可手动配置 label 数据标签位置
-      position: 'top',
+      position: 'top', 
+      
+      style: {
+        fill: 'red',
+        color: 'red',
+        opacity: 0.6,
+        fontSize: 24
+      },
       // 'top', 'bottom', 'middle'
       // 可配置附加的布局方法
       layout: [

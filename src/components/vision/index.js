@@ -33,7 +33,7 @@ function Vision() {
                     </div>
                     <div className="col-lg-6">
                         <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>  
-                            <ContentBlock classNames="btm_vision mt-5" title="Defi App" img={VDefi}>
+                            <ContentBlock classNames="btm_vision mt-5" title="Defi App" img={vmarketPlace}>
                                 <p>Operates as a Decentralized Yield Optimizer platform, allowing users to earn compound interest on their assets.</p>
                                 <p>It automatically optimizes user returns from different liquidity pools (LPs), automated market making (AMM), and other yield farming possibilities in the DeFi ecosystem using a set investment methods protected and enforced by smart contracts and powered by AI.</p>
                             </ContentBlock>
@@ -41,7 +41,7 @@ function Vision() {
                     </div>
                     <div className="col-lg-6">
                         <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>  
-                            <ContentBlock classNames="btm_vision mt-5" title="Marketplace" img={vmarketPlace}>
+                            <ContentBlock classNames="btm_vision mt-5" title="Marketplace" img={VDefi}>
                                 <p>The P2P marketplace is where buyers and sellers meet to carry out operations involving digital goods and assets in a secure way, involving AI for searching, matching, and advising.</p>
                                 <p>One of the multiple advantages is the automatic matching of users, based on a straight AI approach.</p>
                             </ContentBlock>
