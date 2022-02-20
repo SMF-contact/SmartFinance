@@ -429,6 +429,9 @@
  
 /* mobile menu */
 @media only screen and (max-width: 991px) {
+    .mobileMenuI{
+        display: block;
+    }
     .menu-area {
         position: fixed;
         background: #201b52;
