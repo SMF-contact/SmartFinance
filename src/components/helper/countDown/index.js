@@ -46,7 +46,7 @@ const CountDown = ({date}) => {
 
   return (
     <> 
-    { 0 < state.days && state.hours && state.minutes && state.seconds ?  
+    {/* { 0 < state.days && 0 < state.hours && 0 < state.minutes && 0 < state.seconds ?   */}
       <div className="countDownItIs">
         <h4 className="title">PRESALE START IN</h4>
         <div className='countdown-wrapper'>
@@ -69,7 +69,7 @@ const CountDown = ({date}) => {
         </div>
         <Button classes={"theme-btn"} text="Buy Presale" />
       </div>
-    : ""} 
+    {/* : ""}  */}
     </>
   );
 };

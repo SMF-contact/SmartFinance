@@ -33,3 +33,18 @@ function App() {
 }
 
 export default App;
+
+
+
+// Header  [ done  ]
+// tooltip pie chart  [ not nessary ]  [ done  ]
+// pertners should be same as figma size/centered  [ done  ]
+// the timer is disapearing [ done  ]
+// vission icon [ done  ]
+// bar font sizes/bigger [ circulating supply ]  [ done ] 
+
+
+
+
+
+

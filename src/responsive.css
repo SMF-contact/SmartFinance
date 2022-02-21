@@ -53,6 +53,7 @@
 }
 .vision-area img.visionShape {
     top: 70px;
+    left: -350px;
 }
 
 .vision-area {
@@ -107,12 +108,9 @@
         margin: auto;
     }
     .vision-area {
-        padding-top: 180px;
+        padding-top: 200px;
     }
-    
-    .vision-area img.visionShape {
-        top: 40px;
-    }
+     
     
     .content-block.btm_vision {
         min-height: auto;
@@ -120,7 +118,7 @@
         margin: auto;
     }
     .section-title {
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
     .section-title h3 {
         font-size: 38px;}
@@ -160,9 +158,9 @@
 
     }
     .vision-area img.visionShape {
-        top: 0px;
+        top: 65px;
         max-height: 150px;
-        left: -100px;
+        left: -100px; 
     }
 }
 
@@ -237,10 +235,7 @@
         padding-top: 150px;
         padding-bottom: 50px;
     }
-    
-    .vision-area img.visionShape {
-        top: 20px;
-    }
+     
     
     .content-block.btm_vision {
         min-height: auto;
@@ -415,16 +410,38 @@
     }
     .footer-social a {
         margin-bottom: 10px;
+        margin-left: 7px;
     }
     button.scrollToUp {
         right: 70px;
         bottom: 30px;
     }
     .vision-area img.visionShape {
-        top: 0px;
-        max-height: 150px;
-        left: -100px;
+        top: 65px;
+        max-height: 130px;
+        left: -100px; 
     }
+    .feature-area ,
+    .presale-area ,
+    .pertner-area ,
+    .tokenomics-area{ 
+        padding-top: 90px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
  
 /* mobile menu */

@@ -32,7 +32,10 @@ function TheBarChart({datasets}) {
       },
       legend: {
         labels: {
-          color: "rgba(255, 255, 255, .5)", 
+          color: "#fff", 
+          font: {
+              size: 16
+          }
         }
       },
     },
@@ -41,14 +44,29 @@ function TheBarChart({datasets}) {
       x: {
         stacked: true, 
         ticks: {
-          color: "#FFF",  
+          color: "#FFF", 
+          font: {
+              size: 16
+          }
         }
       },
       y: {
         stacked: true,
         beginAtZero: true,
+        title: {
+          display: true,
+          text: 'Circulating Supply', 
+          color:"#fff", 
+          font: {
+              size: 20,
+          },
+          padding:30
+        },
         ticks: {
-          color: "#FFF",  
+          color: "#FFF", 
+          font: {
+              size: 16
+          }
         }
       },
       

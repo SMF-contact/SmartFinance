@@ -36,36 +36,50 @@ function Tokenomics() {
   const data = {
     labels:["Dec 21", "Feb 22", "Apr 22", "May 22", "June 22", "Aug 22"],
     datasets: [{
+      barThickness: 50,
+      barPercentage: 0.5,
       label: 'Presale',
       data: [24000000, 24000000, 24000000, 24000000, 24000000, 24000000],
       backgroundColor: colors.presale // hoverBackgroundColor: "#3260ED",
 
     }, {
+      barThickness: 50,
+      barPercentage: 0.5,
       label: 'Liquidity',
       data: [12936000, 12936000, 12936000, 12936000, 12936000, 12936000],
       backgroundColor: colors.liquidity // hoverBackgroundColor: "#d65ad6",
 
     }, {
+      barThickness: 50,
+      barPercentage: 0.5,
       label: 'Airdrop',
       data: [0, 2310000, 2310000, 2310000, 2310000, 2310000],
       backgroundColor: colors.airdrop // hoverBackgroundColor: "6afff1"
 
     }, {
+      barThickness: 50,
+      barPercentage: 0.5,
       label: 'Gaming',
       data: [0, 0, 3850000, 3850000, 3850000, 3850000],
       backgroundColor: colors.gaming // hoverBackgroundColor: "rgba(0,0,0,0)"
 
     }, {
+      barThickness: 50,
+      barPercentage: 0.5,
       label: 'Staking',
       data: [0, 0, 0, 15400000, 15400000, 15400000],
       backgroundColor: colors.staking // hoverBackgroundColor: "rgba(0,0,0,0)"
 
     }, {
+      barThickness: 50,
+      barPercentage: 0.5,
       label: 'Dev',
       data: [0, 0, 0, 0, 3850000, 3850000],
       backgroundColor: colors.dev // hoverBackgroundColor: "rgba(0,0,0,0)"
 
     }, {
+      barThickness: 50,
+      barPercentage: 0.5,
       label: 'Listing',
       data: [0, 0, 0, 0, 0, 14174000],
       backgroundColor: colors.listing // hoverBackgroundColor: "rgba(0,0,0,0)"
@@ -118,14 +132,14 @@ function Tokenomics() {
                         <div className="transactionTax tknTop">
                             <h5>transaction Tax <span>11%</span></h5>
                             <div className="stickChart">
-                                <div className="firstBlk"></div>
-                                <div className="secondBlk"></div>
-                                <div className="thirdBlk"></div> 
+                                <div className="firstBlk"><span>87%</span></div>
+                                <div className="secondBlk" style={{width:"7%"}}><span>7%</span></div>
+                                <div className="thirdBlk" style={{width:"6%"}}><span>6%</span></div> 
                             </div>
                             <ul>
-                                <li>USDT Holders Reward <span>3%</span></li>
-                                <li>Liquidity <span>4%</span></li>
-                                <li>Marketing <span>4%</span></li>
+                                <li>USDT Holders Reward <span>87%</span></li>
+                                <li>Liquidity <span>7%</span></li>
+                                <li>Marketing <span>6%</span></li>
                             </ul>
                         </div>
                         </ScrollAnimation>  

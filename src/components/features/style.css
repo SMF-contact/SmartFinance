@@ -2,6 +2,7 @@
     position: relative;
     z-index: 2;
     padding: 50px 0;
+    padding-top: 120px;
 }
 .feature-area:after {
     content: "";
