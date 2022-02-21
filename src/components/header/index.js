@@ -2,6 +2,7 @@ import React,{useEffect,useState,useRef} from "react";
 import "./style.css"
 import Logo from "../../imgs/Logo.png"
 import Button from "../helper/button"
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -24,7 +25,7 @@ function Header() {
                     <div className="row align-items-center">
                         <div className="col-lg-3 col-8">
                             <div className="logo">
-                                <a href="#"><img src={Logo} alt="" /></a>
+                                <Link to="/"><img src={Logo} alt="" /></Link>
                             </div>
                         </div>
                         <div className="col-lg-9 col-4">

@@ -20,11 +20,11 @@
 .content-block p {
     margin-bottom: 20px;
 }
-
 .content-block img {
     display: block;
     margin: auto;
-    max-height: 220px;
+    max-height: 150px;
+    margin-top: 50px;
 }
 .content-block ul li {
     position: relative;

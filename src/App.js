@@ -11,9 +11,13 @@ import Team from "./components/team";
 import Pertners from "./components/partners";
 import Footer from "./components/footer";
 import ScrollTop from "./components/helper/scroolToTop";
+import Privacypolicy from "./components/Privacypolicy";
+import TermOfUse from "./components/TermOfUse";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-  return (
+
+const Home = () => {
+  return(
     <> 
       <FixedSocial/>
       <ScrollTop />
@@ -29,22 +33,22 @@ function App() {
       <Pertners/>
       <Footer/>
     </>
+  )
+}
+
+
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="privacy-policy" element={<Privacypolicy />} />
+      <Route path="term-of-use" element={<TermOfUse />} />
+    </Routes>
   );
 }
 
 export default App;
 
-
-
-// Header  [ done  ]
-// tooltip pie chart  [ not nessary ]  [ done  ]
-// pertners should be same as figma size/centered  [ done  ]
-// the timer is disapearing [ done  ]
-// vission icon [ done  ]
-// bar font sizes/bigger [ circulating supply ]  [ done ] 
-
-
-
-
-
-
+ 
+ 
