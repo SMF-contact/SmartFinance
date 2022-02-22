@@ -66,6 +66,31 @@ function TheBarChart({datasets}) {
           color: "#FFF", 
           font: {
               size: 16
+          },
+          callback: function (value,index) {
+            if (0 == value) { 
+              return "0"
+            }else if (10000000 >= value) { 
+              return "10M"
+            }else if (20000000 >= value){ 
+              return "20M"
+            }else if (30000000 >= value) {
+              return "30M"
+            }else if (40000000 >= value) {
+              return "40M"
+            }else if (50000000 >= value) {
+              return "50M"
+            }else if (60000000 >= value) {
+              return "60M"
+            }else if (70000000 >= value) {
+              return "70M"
+            }else if (80000000 >= value) {
+              return "80M"
+            }else if (90000000 >= value) {
+              return "90M"
+            }else {
+              return value
+            } 
           }
         }
       },
