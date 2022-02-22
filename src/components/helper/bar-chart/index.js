@@ -37,7 +37,7 @@ function TheBarChart({datasets}) {
               size: 16
           }
         }
-      },
+      }, 
     },
     responsive: true, 
     scales: {
@@ -48,15 +48,15 @@ function TheBarChart({datasets}) {
           font: {
               size: 16
           }
-        }
+        },
       },
       y: {
         stacked: true,
         beginAtZero: true,
         title: {
           display: true,
-          text: 'Circulating Supply', 
-          color:"#fff", 
+          text: 'CIRCULATING SUPPLY', 
+          color:"#97DAF7", 
           font: {
               size: 20,
           },

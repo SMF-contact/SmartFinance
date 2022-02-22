@@ -43,7 +43,7 @@ function Pertners() {
                             </ScrollAnimation>   
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>  
                                 <Tilt className="willMove" options={{ max : 35,perspective:1000, }} >
-                                    <PertnerBlk img={PartnerLogo3} />
+                                    <PertnerBlk img={PartnerLogo4} />
                                 </Tilt>   
                             </ScrollAnimation>   
                         </div>
@@ -62,7 +62,7 @@ function Pertners() {
                         <div className="partnersColumn">
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
                                 <Tilt className="willMove" options={{ max : 35,perspective:1000, }} >
-                                    <PertnerBlk img={PartnerLogo4} />
+                                    <PertnerBlk img={PartnerLogo3} />
                                 </Tilt> 
                             </ScrollAnimation>   
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   

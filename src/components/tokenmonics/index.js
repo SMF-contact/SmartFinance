@@ -1,18 +1,30 @@
-import React from "react";
+import React,{useState,useRef} from "react";
 import "./style.css" 
 import TokenBackg from "../../imgs/tokenomics.png" 
-import TheBarChart from "../helper/bar-chart";
-import PieChat from "../helper/pie-chart"; 
+import Icon from "../../imgs/icon.png" 
+import Icon2 from "../../imgs/icon2.png" 
+import Icon3 from "../../imgs/icon3.png" 
+import TheBarChart from "../helper/bar-chart"; 
 import Button from "../helper/button"
 import ScrollAnimation from 'react-animate-on-scroll'; 
 import { PieChart } from 'react-minimal-pie-chart'; 
  
 
 
+function TokenmicsBlk({img,title,content}) {
+  return(
+    <div className="tkn-step">
+      <img src={img} alt="" />
+      <h5>{title}</h5>
+      <p>{content}</p>
+    </div>
+  )
+}
 
 
 function Tokenomics() {
 
+  // pie chart data
   const dataMock = [
     { title: 'Token Presale', value: 31.48, color: '#3260ed' },
     { title: 'Staking & Farming', value: 20, color: '#8ca8ff' },
@@ -22,7 +34,15 @@ function Tokenomics() {
     { title: 'Gaming Tournament', value: 5, color: '#32e4ed' }, 
     { title: 'Airdrop', value: 3, color: '#32bbed' }, 
   ];
-   
+  
+  // line chart data
+  const DataForLineChart = [
+    { title: 'USDT Holders Reward', value: 87, color: '#8CA8FF' },
+    { title: 'Liquidity', value: 7, color: '#3290ED' },
+    { title: 'Marketing', value: 6, color: '#7AF0D1' }, 
+  ];
+
+
   // For bar chart
   const colors = {
     "presale": "#3260ED",
@@ -36,58 +56,65 @@ function Tokenomics() {
   const data = {
     labels:["Dec 21", "Feb 22", "Apr 22", "May 22", "June 22", "Aug 22"],
     datasets: [{
-      barThickness: 50,
-      barPercentage: 0.5,
+      barThickness: 100,
+      barPercentage: 0.8,
       label: 'Presale',
       data: [24000000, 24000000, 24000000, 24000000, 24000000, 24000000],
       backgroundColor: colors.presale // hoverBackgroundColor: "#3260ED",
 
     }, {
-      barThickness: 50,
-      barPercentage: 0.5,
+      barThickness: 100,
+      barPercentage: 0.8,
       label: 'Liquidity',
       data: [12936000, 12936000, 12936000, 12936000, 12936000, 12936000],
       backgroundColor: colors.liquidity // hoverBackgroundColor: "#d65ad6",
 
     }, {
-      barThickness: 50,
-      barPercentage: 0.5,
+      barThickness: 100,
+      barPercentage: 0.8,
       label: 'Airdrop',
       data: [0, 2310000, 2310000, 2310000, 2310000, 2310000],
       backgroundColor: colors.airdrop // hoverBackgroundColor: "6afff1"
 
     }, {
-      barThickness: 50,
-      barPercentage: 0.5,
+      barThickness: 100,
+      barPercentage: 0.8,
       label: 'Gaming',
       data: [0, 0, 3850000, 3850000, 3850000, 3850000],
       backgroundColor: colors.gaming // hoverBackgroundColor: "rgba(0,0,0,0)"
 
     }, {
-      barThickness: 50,
-      barPercentage: 0.5,
+      barThickness: 100,
+      barPercentage: 0.8,
       label: 'Staking',
       data: [0, 0, 0, 15400000, 15400000, 15400000],
       backgroundColor: colors.staking // hoverBackgroundColor: "rgba(0,0,0,0)"
 
     }, {
-      barThickness: 50,
-      barPercentage: 0.5,
+      barThickness: 100,
+      barPercentage: 0.8,
       label: 'Dev',
       data: [0, 0, 0, 0, 3850000, 3850000],
       backgroundColor: colors.dev // hoverBackgroundColor: "rgba(0,0,0,0)"
 
     }, {
-      barThickness: 50,
-      barPercentage: 0.5,
+      barThickness: 100,
+      barPercentage: 0.8,
       label: 'Listing',
       data: [0, 0, 0, 0, 0, 14174000],
       backgroundColor: colors.listing // hoverBackgroundColor: "rgba(0,0,0,0)"
 
     }],
   };
+ 
+  const toolTip = useRef()
+
+  
+
 
     return (
+      <div style={{overflow:"hidden"}}>
+        <div className="customTooltip" ref={toolTip}>Hello</div>
         <div className="tokenomics-area" id="tokenomics">
             <img src={TokenBackg} className="tokenomics-backg" alt="" />
             <div className="container">
@@ -99,19 +126,43 @@ function Tokenomics() {
                             </ScrollAnimation>   
                         </div>
                     </div>
+                    <div className="col-lg-12">
+                      <div className="tokenomics-step">
+                        <TokenmicsBlk img={Icon} title="Passive Income" content={"3% of each transaction as USDT rewards."} /> 
+                        <TokenmicsBlk img={Icon2} title="Liquidity Lock" content={"The liquidity will be locked for a 10 year period."} /> 
+                        <TokenmicsBlk img={Icon3} title="Vesting" content={"5% of Dev wallet, locked for 6 months."} />  
+                      </div>
+                    </div> 
                     <div className="col-lg-6">
                         <div className="pi-data tknTop">  
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
                                 <div className="tkn_distribution_wrp"> 
                                   <div className="mainPieCgar"> 
                                     <PieChart
+                                    
+                                      animationDuration={1000} 
+                                      animate={true} 
                                       data={dataMock} 
-                                      label={({ dataEntry }) => dataEntry.value+"%"}  
-                                      labelStyle={{
-                                        fontSize: '5px',
-                                        fontFamily: 'sans-serif',
-                                        fill:"#fff"
-                                      }}
+                                      // label={({ dataEntry }) => dataEntry.value+"%"}  
+                                      // labelStyle={{
+                                      //   fontSize: '5px',
+                                      //   fontFamily: 'sans-serif',
+                                      //   fill:"#fff"
+                                      // }}
+                                       
+                                      onMouseOver={(e, index) => { 
+                                        toolTip.current.innerHTML = dataMock[index].value+" %"
+                                        e.target.style.opacity = "0.8"
+                                        e.target.style.cursor = "pointer" 
+                                        toolTip.current.style.top = e.pageY+"px"
+                                        toolTip.current.style.left = e.pageX+"px" 
+                                        toolTip.current.classList.add('active')
+                                      }} 
+                                      onMouseOut={(e, index) => {
+                                        e.target.style.opacity = "1" 
+                                        e.target.style.cursor = "auto"
+                                        toolTip.current.classList.remove('active')
+                                      }} 
                                       lineWidth={45} 
                                       labelPosition={75} 
                                     /> 
@@ -132,19 +183,18 @@ function Tokenomics() {
                         <div className="transactionTax tknTop">
                             <h5>transaction Tax <span>11%</span></h5>
                             <div className="stickChart">
-                                <div className="firstBlk"><span>87%</span></div>
-                                <div className="secondBlk" style={{width:"7%"}}><span>7%</span></div>
-                                <div className="thirdBlk" style={{width:"6%"}}><span>6%</span></div> 
+                                {DataForLineChart && DataForLineChart.map((data,id) => {
+                                  return <div key={id} style={{width:data.value+"%",background:data.color}}><span>{data.title+ " " + data.value+"%"}</span></div>
+                                })}   
                             </div>
-                            <ul>
-                                <li>USDT Holders Reward <span>87%</span></li>
-                                <li>Liquidity <span>7%</span></li>
-                                <li>Marketing <span>6%</span></li>
+                            <ul className="ul_data-list" style={{margin:"0"}}>
+                                {DataForLineChart && DataForLineChart.map((data,id) => {
+                                  return <li key={id}><div><small style={{background:data.color}}></small> {data.title}</div> <span>{data.value}%</span></li>
+                                })}
                             </ul>
                         </div>
                         </ScrollAnimation>  
-                    </div>
-
+                    </div> 
                     <div className="col-lg-12">
                         <div className="the-bar-chart">
                             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
@@ -172,6 +222,7 @@ function Tokenomics() {
                 </div>
             </div>
         </div>
+      </div>
     );
 }
 

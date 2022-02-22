@@ -1,13 +1,14 @@
 .vision-area {
     position: relative;
     z-index: 1;
-    padding-top: 180px; 
+    padding-top: 215px; 
     background: linear-gradient(rgb(15 11 67), rgba(13, 9, 59, 1));
 }
 .vision-area img.visionShape {
     position: absolute;
-    top: 75px;
+    top: 115px;
     left: -160px;
+    /* max-height: 280px; */
 }
 .vision-area img.circleShape {
     position: absolute;

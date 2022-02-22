@@ -28,25 +28,20 @@ function Hero() {
             <img src={HeroBackg} className="hero_img" alt="" />
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-5">
-                        <ScrollAnimation animateIn="fadeIn"> 
+                    <div className="col-lg-5"> 
                         <div className="hero-wrp">
                             <h2>Smart<span>Finance</span></h2>
                             <p className="whiteColor">The first ever platform powerd by AI</p>
                             <p>A new AI-powered platform that offers DeFi services as well as P2P trading and investing tools. All of this is made possible by our one-of-a-kind Artificial Intelligence, Machine Learning, and Mathematical Expectations approach.</p>
                             <CountDown date="12/25/2022" />{/* you could use both date formate no problem: Oct 25, 2023 OR 12/25/2022 */} 
-                        </div>
-                        </ScrollAnimation>
+                        </div> 
                     </div>
-                    <div className="col-lg-7">
-                        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'> 
+                    <div className="col-lg-7"> 
                         <div className="hero-img">
                             <img src={HeroImg} alt="" />
-                        </div>
-                        </ScrollAnimation>
+                        </div> 
                     </div>
-                </div>
-                <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'> 
+                </div> 
                 <div className="row">
                     <div className="col-lg-6 offset-lg-3 text-center">
                         <div className="copyAddress">
@@ -86,8 +81,7 @@ function Hero() {
                             </Tilt> 
                         </div>
                     </div>
-                </div>
-                </ScrollAnimation>
+                </div> 
             </div>
         </div>
     );

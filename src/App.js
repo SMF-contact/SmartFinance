@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FixedSocial from "./components/helper/fixedsocial";
 import Header from "./components/header";
 import Hero from "./components/hero";
@@ -13,10 +13,12 @@ import Footer from "./components/footer";
 import ScrollTop from "./components/helper/scroolToTop";
 import Privacypolicy from "./components/Privacypolicy";
 import TermOfUse from "./components/TermOfUse";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"; 
 
 
 const Home = () => {
+ 
+
   return(
     <> 
       <FixedSocial/>
@@ -48,7 +50,4 @@ function App() {
   );
 }
 
-export default App;
-
- 
- 
+export default App; 

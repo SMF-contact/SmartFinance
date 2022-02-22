@@ -41,6 +41,7 @@
     border-radius: 0 20px 20px 0;
 }
 .stickChart > div {
+    width: 100%;
     transition: .3s;
     cursor: pointer;
     position: relative;
@@ -67,7 +68,8 @@
     background: #000;
     color: #fff;
     box-shadow: 0 0px 20px -3px #ffffff36;
-    font-size: 15px;
+    font-size: 14px;
+    width: max-content;
     opacity: 0;
     visibility: hidden;
     transition: .3s;
@@ -170,12 +172,67 @@ ul.ul_data-list li > div small {
     color: #BDE0A2;
 }
 
+.customTooltip{
+    width: auto;
+    height: auto;
+    background: rgb(22, 18, 67);
+    position: absolute;
+    top: 5355px;
+    left: 412px;
+    z-index: 9999;
+    box-shadow: rgb(255 255 255 / 56%) 0px 0px 14px;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    left: 0;
+}
+.customTooltip.active{ 
+    opacity: 1;
+    visibility: visible;
+}
+
+.tokenomics-step {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tkn-step {
+    max-width: 290px;
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+
+.tokenomics-step img {
+    max-height: 80px;
+}
+
+.tokenomics-step h5 {
+    font-size: 22px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.tokenomics-step  p {
+    color: #979EA5;
+    margin: 0;
+    line-height: 22px;
+}
 
 
-
-
-
-
+@media only screen and (max-width:767px) {
+    .tokenomics-step {
+        flex-wrap: wrap;
+    }
+    .tokenomics-step img {
+        max-height: 60px;
+    }
+}
 
 
 

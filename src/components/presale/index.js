@@ -55,6 +55,8 @@ function Presale() {
                         </div>
                         </ScrollAnimation>   
                     </div>
+                </div>
+                <div className="row align-items-center">
                     <div className="col-lg-7 col-md-7">
                         <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>   
                             <div className="airdrop">
